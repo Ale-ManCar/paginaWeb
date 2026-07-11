@@ -1,0 +1,28 @@
+{
+  "name": "grupo-1-store",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "es-abstract": "1.24.2",
+    "is-callable": "1.2.7",
+    "next": "16.2.10",
+    "prettier": "3.9.5",
+    "typescript": "5.9.3"
+  }
+}
