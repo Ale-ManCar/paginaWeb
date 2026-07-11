@@ -4,10 +4,10 @@ import { describe, expect, it } from 'vitest';
 import HomePage from './page';
 
 describe('HomePage', () => {
-  it('identifies the store', () => {
-    render(<HomePage />);
+  it('communicates the store proposition', async () => {
+    render(await HomePage());
     expect(
-      screen.getByRole('heading', { name: 'Grupo 1 Store' }),
+      screen.getByRole('heading', { name: /Lo cotidiano/ }),
     ).toBeInTheDocument();
   });
 });

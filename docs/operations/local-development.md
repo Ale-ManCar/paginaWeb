@@ -2,7 +2,7 @@
 
 ## Servicios
 
-- PostgreSQL: `localhost:5432`
+- PostgreSQL: `localhost:5433` (se evita conflicto con instalaciones locales en `5432`)
 - Redis: `localhost:6379`
 - MinIO API y consola: `localhost:9000` y `localhost:9001`
 - Mailpit SMTP y UI: `localhost:1025` y `localhost:8025`

@@ -1,18 +1,23 @@
 import type { Metadata } from 'next';
+import { Manrope, Newsreader } from 'next/font/google';
 import type { ReactNode } from 'react';
 import './styles.css';
 
 export const metadata: Metadata = {
-  description: 'Tienda en línea segura y preparada para crecer.',
-  title: { default: 'Grupo 1 Store', template: '%s | Grupo 1 Store' },
+  description:
+    'Objetos cotidianos elegidos por su utilidad, tacto y permanencia.',
+  title: { default: 'Casa Nativa', template: '%s | Casa Nativa' },
 };
+
+const sans = Manrope({ subsets: ['latin'], variable: '--font-sans' });
+const serif = Newsreader({ subsets: ['latin'], variable: '--font-serif' });
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className={`${sans.variable} ${serif.variable}`}>{children}</body>
     </html>
   );
 }
