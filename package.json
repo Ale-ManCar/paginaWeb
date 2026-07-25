@@ -21,8 +21,8 @@
   "devDependencies": {
     "es-abstract": "1.24.2",
     "is-callable": "1.2.7",
-    "next": "16.2.10",
-    "prettier": "3.9.5",
+    "next": "16.2.11",
+    "prettier": "3.9.6",
     "typescript": "5.9.3"
   }
 }
